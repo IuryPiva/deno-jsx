@@ -12,10 +12,10 @@ for (const [filename, file] of Object.entries(files)) {
   console.log({path})
   await Deno.writeTextFile(path, file)
 
-  const p = Deno.run({
-    cmd: ["deno", "fmt", path],
-  });
+  // const p = Deno.run({
+  //   cmd: ["deno", "fmt", path],
+  // });
 
-  await p.status();
-  p.close();
+  // await p.status();
+  // p.close();
 }

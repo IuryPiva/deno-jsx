@@ -1,11 +1,9 @@
 /** @jsx h */
-/// <reference no-default-lib="true"/>
 /// <reference lib="dom" />
-/// <reference lib="deno.ns" />
-/// <reference lib="deno.unstable" />
+
 import { render, Component, Fragment, h } from "https://deno.land/x/nano_jsx@v0.0.26/mod.ts";
 
-class Counter extends Component {
+export class App extends Component {
   value = 0
 
   changeValue(newValue: number) {
@@ -24,4 +22,4 @@ class Counter extends Component {
   }
 }
 
-render(<Counter />, document.body)
+render(<App />, document.body)
