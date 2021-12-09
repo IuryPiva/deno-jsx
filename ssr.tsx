@@ -10,7 +10,6 @@ const { files } = await Deno.emit(`./app.tsx`, {
   bundle: "module",
   compilerOptions: {
     sourceMap: false,
-    lib: ["dom"]
   },
   check: false,
 });
